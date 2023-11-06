@@ -118,7 +118,7 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 # omz
-alias zshconfig="geany ~/.zshrc"
+alias zshrc="nvim ~/.dotfiles/.zshrc"
 alias ohmyzsh="thunar ~/.oh-my-zsh"
 
 # ls
@@ -132,9 +132,13 @@ alias lg='lsd -l --group-directories-first'
 # git
 alias gcl='git clone --depth 1'
 alias gi='git init'
-alias ga='git add'
+alias ga='git add .'
 alias gc='git commit -m'
-alias gp='git push'
+alias gpl='git pull'
+alias gfpl='git reset --hard HEAD && git pull'
+alias gps='git push'
+alias gpp='ga && gc "." && gps'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
