@@ -139,6 +139,9 @@ alias gfpl='git reset --hard HEAD && git pull'
 alias gps='git push'
 alias gpp='ga && gc "." && gps'
 
+# Youtube-dl
+alias yt-mp3='yt-dlp -x -i --audio-format mp3'
+
 # Fuzzy finding that opens file in nvim
 alias fuzzy='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 
