@@ -120,6 +120,7 @@ add-zsh-hook -Uz precmd rehash_precmd
 # omz
 alias zshrc="nvim ~/.dotfiles/.zshrc"
 alias ohmyzsh="thunar ~/.oh-my-zsh"
+alias nvimrc="nvim ~/.dotfiles/nvim/init.lua"
 
 # ls
 alias l='lsd -lh'
